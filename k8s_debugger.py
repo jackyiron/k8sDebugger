@@ -18,9 +18,9 @@ Commands:
     quick-check       Quick health check of cluster
 
 Examples:
-    python k8s_debugger.py node worker-node-1
-    python k8s_debugger.py pod my-app -n default
-    python k8s_debugger.py quick-check
+    ./k8s_debugger.py node worker-node-1
+    ./k8s_debugger.py pod my-app -n default
+    ./k8s_debugger.py quick-check
 """
 
 import argparse

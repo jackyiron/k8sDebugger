@@ -26,56 +26,58 @@ sudo mv kubectl /usr/local/bin/
 
 ## Usage
 
-### Quick Check - Cluster Health Overview
-
 ```bash
-python k8s_debugger.py quick-check
+# Make executable
+chmod +x k8s_debugger.py
+
+# Run tool
+./k8s_debugger.py quick-check
 ```
 
 ### Debug a Node
 
 ```bash
-python k8s_debugger.py node <node-name>
+./k8s_debugger.py node <node-name>
 # Example:
-python k8s_debugger.py node worker-node-1
+./k8s_debugger.py node worker-node-1
 ```
 
 ### Debug a Pod
 
 ```bash
-python k8s_debugger.py pod <pod-name> -n <namespace>
+./k8s_debugger.py pod <pod-name> -n <namespace>
 # Example:
-python k8s_debugger.py pod my-app -n default
+./k8s_debugger.py pod my-app -n default
 ```
 
 ### Debug a Service
 
 ```bash
-python k8s_debugger.py svc <service-name> -n <namespace>
+./k8s_debugger.py svc <service-name> -n <namespace>
 # Example:
-python k8s_debugger.py svc my-service -n default
+./k8s_debugger.py svc my-service -n default
 ```
 
 ### Debug an Ingress/Gateway
 
 ```bash
-python k8s_debugger.py gateway <ingress-name> -n <namespace>
+./k8s_debugger.py gateway <ingress-name> -n <namespace>
 # Example:
-python k8s_debugger.py gateway my-ingress -n default
+./k8s_debugger.py gateway my-ingress -n default
 ```
 
 ### Cluster Analysis
 
 ```bash
-python k8s_debugger.py cluster
+./k8s_debugger.py cluster
 # or
-python k8s_debugger.py analyze
+./k8s_debugger.py analyze
 ```
 
 ### JSON Output
 
 ```bash
-python k8s_debugger.py quick-check -o json
+./k8s_debugger.py quick-check -o json
 ```
 
 ## Commands
