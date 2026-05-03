@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 """
 K8s Debugger - AI-Powered Kubernetes Node & Pod Debugging Tool
 
